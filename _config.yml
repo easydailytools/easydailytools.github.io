@@ -1,5 +1,5 @@
 title: "Easy Daily Tools Blog"
-description: "Guides, tips, and calculators for daily life tools."
+description: "Scenario-based tools and guides to make your life, work, and study easier."
 baseurl: "" # 如果用 blog.easydailytools.com，就留空
 url: "https://easydailytools.github.io" # 改成你的域名
 theme: minima

@@ -8,7 +8,7 @@ description: "Learn more about Easy Daily Tools"
     <header class="page-header">
         <div class="container">
             <h1>About Easy Daily Tools</h1>
-            <p>Your trusted source for practical tools and helpful guides.</p>
+            <p>Your trusted source for scenario-based, practical micro tools and helpful guides.</p>
         </div>
     </header>
 
@@ -16,30 +16,38 @@ description: "Learn more about Easy Daily Tools"
         <div class="container">
             <div class="about-section">
                 <h2>Our Mission</h2>
-                <p>We believe that everyone deserves access to simple, effective tools that make daily life easier. Our mission is to provide practical calculators, helpful guides, and valuable tips that you can use every day.</p>
+                <p>We believe that everyone deserves access to scenario-based, practical micro tools that make daily life easier. Our mission is to provide efficient, distraction-free solutions for real needs in life, work, and study.</p>
             </div>
 
             <div class="about-section">
                 <h2>What We Offer</h2>
                 <div class="features-grid">
                     <div class="feature">
-                        <h3>Practical Tools</h3>
-                        <p>From percentage calculators to unit converters, we provide tools that solve real problems.</p>
+                        <h3>Date & Time Tools</h3>
+                        <p>Date difference calculators, workday planners, and time management solutions for project planning and scheduling.</p>
                     </div>
                     <div class="feature">
-                        <h3>Helpful Guides</h3>
-                        <p>Step-by-step instructions and tips for common tasks and challenges.</p>
+                        <h3>Financial Tools</h3>
+                        <p>Bill splitters, cost calculators, and financial planning tools for group expenses and personal finance.</p>
                     </div>
                     <div class="feature">
-                        <h3>Daily Tips</h3>
-                        <p>Regular updates with new tools, tips, and insights to improve your daily routine.</p>
+                        <h3>Lifestyle Tools</h3>
+                        <p>Shoe size converters, zodiac calculators, and text card makers for daily life needs.</p>
                     </div>
                 </div>
             </div>
 
             <div class="about-section">
+                <h2>Our Tools</h2>
+                <p>Discover our full collection of practical tools and calculators at our main website.</p>
+                <div class="tools-link">
+                    <a href="https://www.easydailytools.com/en" class="btn btn-primary" target="_blank" rel="noopener">Visit Easy Daily Tools</a>
+                </div>
+            </div>
+
+            <div class="about-section">
                 <h2>Get in Touch</h2>
-                <p>Have a suggestion for a new tool or guide? Want to share your feedback? We'd love to hear from you!</p>
+                <p>Have a suggestion for a new guide or tip? Want to share your feedback? We'd love to hear from you!</p>
                 <div class="contact-info">
                     <p><strong>Email:</strong> <a href="mailto:contact@easydailytools.com">contact@easydailytools.com</a></p>
                     <p><strong>GitHub:</strong> <a href="https://github.com/easydailytools" target="_blank" rel="noopener">github.com/easydailytools</a></p>

@@ -1,13 +1,13 @@
 # Easy Daily Tools Blog
 
-A modern, responsive blog and tools website built with Jekyll. This site provides practical guides, helpful tips, and useful calculators to make your daily life easier.
+A modern, responsive blog website built with Jekyll. This site provides scenario-based guides and tips to complement the [Easy Daily Tools](https://www.easydailytools.com/en) website, helping make your life, work, and study easier.
 
 ## Features
 
 - 🎨 **Modern Design**: Clean, responsive design with beautiful gradients and animations
 - 📱 **Mobile-First**: Fully responsive design that works on all devices
 - 🚀 **Fast Performance**: Optimized for speed with minimal JavaScript
-- 🛠️ **Interactive Tools**: Built-in calculators and utilities
+- 🔗 **Tool Integration**: Direct links to the main Easy Daily Tools website
 - 📝 **Blog System**: Easy-to-manage blog with Jekyll
 - 🔍 **SEO Optimized**: Built-in SEO features and meta tags
 - ♿ **Accessible**: Follows accessibility best practices
@@ -16,17 +16,16 @@ A modern, responsive blog and tools website built with Jekyll. This site provide
 
 - **Home**: Welcome page with featured posts and categories
 - **Blog**: Complete list of all blog posts
-- **Tools**: Collection of useful calculators and utilities
+- **Blog**: Complete list of all blog posts
 - **About**: Information about the project and contact details
 
-## Tools Available
+## Content Available
 
-- Percentage Calculator
-- Unit Converter (coming soon)
-- Age Calculator (coming soon)
-- Tip Calculator (coming soon)
-- BMI Calculator (coming soon)
-- Password Generator (coming soon)
+- Blog posts with practical tips and guides
+- Productivity advice and insights
+- Daily life improvement suggestions
+- Community-driven content and discussions
+- Direct links to [Easy Daily Tools](https://www.easydailytools.com/en) for practical calculators
 
 ## Getting Started
 
@@ -80,7 +79,7 @@ easydailytools.github.io/
 │   ├── js/             # JavaScript
 │   └── images/         # Images
 ├── blog/                # Blog listing page
-├── tools/               # Tools pages
+
 ├── about.md             # About page
 └── index.md             # Homepage
 ```
@@ -103,19 +102,7 @@ excerpt: "Brief description of your post"
 Your post content here...
 ```
 
-### Tools
 
-Add new tools by creating Markdown files in the `tools/` directory:
-
-```markdown
----
-layout: default
-title: "Tool Name"
-description: "Tool description"
----
-
-Your tool content here...
-```
 
 ### Pages
 

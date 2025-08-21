@@ -272,6 +272,28 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+/* Tools Section */
+.tools-section {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.tools-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.tools-section p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.tools-link {
+    margin-top: 1rem;
+}
+
 /* Page Headers */
 .page-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
