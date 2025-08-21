@@ -21,6 +21,7 @@ A modern, responsive blog website built with Jekyll. This site provides scenario
 
 ## Content Available
 
+- **Multilingual Content**: Blog posts available in English, Spanish, and Portuguese
 - Blog posts with practical tips and guides
 - Productivity advice and insights
 - Daily life improvement suggestions
@@ -96,11 +97,22 @@ layout: post
 title: "Your Post Title"
 date: YYYY-MM-DD
 categories: [category1, category2]
-excerpt: "Brief description of your post"
+language: en  # Language: en (English), es (Spanish), pt (Portuguese)
+description: "Brief description for SEO and page previews"  # Used in meta description
+keywords: [keyword1, keyword2, keyword3]  # SEO keywords (optional)
 ---
 
 Your post content here...
 ```
+
+**Language Options:**
+- `en`: English (default) - HTML lang="en"
+- `es`: Spanish (Español) - HTML lang="es"
+- `pt`: Portuguese (Português) - HTML lang="pt"
+
+**SEO Fields:**
+- `description`: Brief description for search engines, social sharing, and page previews (used in meta description)
+- `keywords`: Array of keywords for SEO optimization (optional)
 
 
 

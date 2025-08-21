@@ -14,11 +14,23 @@ description: "All blog posts and articles"
 
     <div class="blog-content">
         <div class="container">
+
+
             <div class="posts-list">
                 {% for post in site.posts %}
                 <article class="post-item">
                     <div class="post-meta">
                         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+                        <span class="language-badge language-{{ post.language | default: 'en' }}">
+                            {% case post.language %}
+                            {% when 'es' %}
+                                🇪🇸 Español
+                            {% when 'pt' %}
+                                🇵🇹 Português
+                            {% else %}
+                                🇺🇸 English
+                            {% endcase %}
+                        </span>
                         {% if post.categories %}
                         <div class="post-categories">
                             {% for category in post.categories %}
@@ -26,11 +38,12 @@ description: "All blog posts and articles"
                             {% endfor %}
                         </div>
                         {% endif %}
+
                     </div>
                     <h2 class="post-title">
                         <a href="{{ post.url }}">{{ post.title }}</a>
                     </h2>
-                    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                    <p class="post-excerpt">{{ post.description | strip_html | truncatewords: 30 }}</p>
                     <a href="{{ post.url }}" class="read-more">Read More →</a>
                 </article>
                 {% endfor %}

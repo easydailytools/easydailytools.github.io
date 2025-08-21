@@ -3,7 +3,9 @@ layout: post
 title: "Welcome to Easy Daily Tools"
 date: 2024-01-15
 categories: [introduction]
-excerpt: "Welcome to our new blog! We're excited to share practical tools and helpful guides to make your daily life easier."
+language: en
+keywords: [welcome, introduction, daily tools, productivity, guides]
+description: "Welcome to our new blog! We're excited to share practical tools and helpful guides to make your daily life easier."
 ---
 
 Welcome to **Easy Daily Tools**! We're thrilled to launch this blog and share our mission with you.

@@ -14,23 +14,34 @@ description: "Guides, tips, and calculators for daily life tools."
     </div>
   </div>
 
-  <div class="featured-posts">
-    <h2>Latest Posts</h2>
-    <div class="posts-grid">
-      {% for post in site.posts limit:3 %}
-      <article class="post-card">
-        <div class="post-meta">
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        <div class="featured-posts">
+        <h2>Latest Posts</h2>
+        <div class="posts-grid">
+          {% for post in site.posts limit:3 %}
+          <article class="post-card">
+            <div class="post-meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+              <span class="language-badge language-{{ post.language | default: 'en' }}">
+                {% case post.language %}
+                {% when 'es' %}
+                  🇪🇸 ES
+                {% when 'pt' %}
+                  🇵🇹 PT
+                {% else %}
+                  🇺🇸 EN
+                {% endcase %}
+              </span>
+
+            </div>
+            <h3 class="post-title">
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <p class="post-excerpt">{{ post.description | strip_html | truncatewords: 20 }}</p>
+            <a href="{{ post.url }}" class="read-more">Read More →</a>
+          </article>
+          {% endfor %}
         </div>
-        <h3 class="post-title">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </h3>
-        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
-        <a href="{{ post.url }}" class="read-more">Read More →</a>
-      </article>
-      {% endfor %}
-    </div>
-  </div>
+      </div>
 
   <div class="categories-section">
     <h2>Categories</h2>

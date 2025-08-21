@@ -112,9 +112,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             posts.forEach(post => {
                 const title = post.querySelector('h2, h3').textContent.toLowerCase();
-                const excerpt = post.querySelector('.post-excerpt')?.textContent.toLowerCase() || '';
+                const description = post.querySelector('.post-excerpt')?.textContent.toLowerCase() || '';
                 
-                if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
                     post.style.display = 'block';
                 } else {
                     post.style.display = 'none';
@@ -122,6 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+
     
     // Add back to top button
     const backToTopButton = document.createElement('button');

@@ -11,5 +11,18 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# 多语言支持（手动文件夹）
+# 多语言支持
 languages: ["en", "es", "pt"]
+default_lang: "en"
+
+# 语言配置
+lang_config:
+  en:
+    name: "English"
+    flag: "🇺🇸"
+  es:
+    name: "Español"
+    flag: "🇪🇸"
+  pt:
+    name: "Português"
+    flag: "🇵🇹"
