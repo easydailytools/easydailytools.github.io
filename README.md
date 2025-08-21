@@ -1,0 +1,201 @@
+# Easy Daily Tools Blog
+
+A modern, responsive blog and tools website built with Jekyll. This site provides practical guides, helpful tips, and useful calculators to make your daily life easier.
+
+## Features
+
+- 🎨 **Modern Design**: Clean, responsive design with beautiful gradients and animations
+- 📱 **Mobile-First**: Fully responsive design that works on all devices
+- 🚀 **Fast Performance**: Optimized for speed with minimal JavaScript
+- 🛠️ **Interactive Tools**: Built-in calculators and utilities
+- 📝 **Blog System**: Easy-to-manage blog with Jekyll
+- 🔍 **SEO Optimized**: Built-in SEO features and meta tags
+- ♿ **Accessible**: Follows accessibility best practices
+
+## Pages
+
+- **Home**: Welcome page with featured posts and categories
+- **Blog**: Complete list of all blog posts
+- **Tools**: Collection of useful calculators and utilities
+- **About**: Information about the project and contact details
+
+## Tools Available
+
+- Percentage Calculator
+- Unit Converter (coming soon)
+- Age Calculator (coming soon)
+- Tip Calculator (coming soon)
+- BMI Calculator (coming soon)
+- Password Generator (coming soon)
+
+## Getting Started
+
+### Prerequisites
+
+- Ruby (version 2.5.0 or higher)
+- RubyGems
+- GCC and Make
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/easydailytools/easydailytools.github.io.git
+   cd easydailytools.github.io
+   ```
+
+2. **Install Jekyll and dependencies**
+   ```bash
+   gem install jekyll bundler
+   bundle install
+   ```
+
+3. **Run the development server**
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:4000`
+
+### Building for Production
+
+```bash
+bundle exec jekyll build
+```
+
+The built site will be in the `_site` directory.
+
+## Project Structure
+
+```
+easydailytools.github.io/
+├── _config.yml          # Jekyll configuration
+├── _layouts/            # HTML layouts
+│   ├── default.html     # Main layout
+│   └── post.html        # Blog post layout
+├── _posts/              # Blog posts (Markdown)
+├── assets/              # Static assets
+│   ├── css/            # Stylesheets
+│   ├── js/             # JavaScript
+│   └── images/         # Images
+├── blog/                # Blog listing page
+├── tools/               # Tools pages
+├── about.md             # About page
+└── index.md             # Homepage
+```
+
+## Adding New Content
+
+### Blog Posts
+
+Create new blog posts in the `_posts/` directory with the following format:
+
+```markdown
+---
+layout: post
+title: "Your Post Title"
+date: YYYY-MM-DD
+categories: [category1, category2]
+excerpt: "Brief description of your post"
+---
+
+Your post content here...
+```
+
+### Tools
+
+Add new tools by creating Markdown files in the `tools/` directory:
+
+```markdown
+---
+layout: default
+title: "Tool Name"
+description: "Tool description"
+---
+
+Your tool content here...
+```
+
+### Pages
+
+Create new pages by adding Markdown files in the root directory with front matter:
+
+```markdown
+---
+layout: default
+title: "Page Title"
+description: "Page description"
+---
+
+Your page content here...
+```
+
+## Customization
+
+### Colors and Styling
+
+Edit `assets/css/main.css` to customize:
+- Color scheme
+- Typography
+- Layout spacing
+- Animations
+
+### JavaScript Functionality
+
+Modify `assets/js/main.js` to add:
+- New interactive features
+- Custom animations
+- Additional functionality
+
+### Site Configuration
+
+Update `_config.yml` to change:
+- Site title and description
+- Base URL
+- Theme settings
+- Plugin configuration
+
+## Deployment
+
+### GitHub Pages
+
+This site is configured for GitHub Pages. Simply push your changes to the main branch and GitHub will automatically build and deploy your site.
+
+### Other Hosting
+
+For other hosting providers, build the site locally and upload the `_site` directory:
+
+```bash
+bundle exec jekyll build
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you have any questions or need help, please:
+
+- Open an issue on GitHub
+- Email us at contact@easydailytools.com
+- Check our documentation
+
+## Acknowledgments
+
+- Built with [Jekyll](https://jekyllrb.com/)
+- Icons and design inspiration from modern web design trends
+- Community contributors and feedback
+
+---
+
+**Made with ❤️ to make daily life easier**

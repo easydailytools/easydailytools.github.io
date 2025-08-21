@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<article class="post">
+    <header class="post-header">
+        <div class="container">
+            <h1 class="post-title">{% raw %}{{ page.title }}{% endraw %}</h1>
+            <div class="post-meta">
+                <time datetime="{% raw %}{{ page.date | date_to_xmlschema }}{% endraw %}" class="post-date">
+                    {% raw %}{{ page.date | date: "%B %d, %Y" }}{% endraw %}
+                </time>
+                {% raw %}{% if page.author %}
+                <span class="post-author">by {{ page.author }}</span>
+                {% endif %}{% endraw %}
+                {% raw %}{% if page.categories %}
+                <div class="post-categories">
+                    {% for category in page.categories %}
+                    <span class="category-tag">{{ category }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}{% endraw %}
+            </div>
+        </div>
+    </header>
+
+    <div class="post-content">
+        <div class="container">
+            <div class="content-wrapper">
+                {% raw %}{{ content }}{% endraw %}
+            </div>
+        </div>
+    </div>
+
+    <footer class="post-footer">
+        <div class="container">
+            <div class="post-navigation">
+                {% raw %}{% if page.previous %}
+                <a href="{{ page.previous.url }}" class="prev-post">
+                    ← {{ page.previous.title }}
+                </a>
+                {% endif %}
+                {% if page.next %}
+                <a href="{{ page.next.url }}" class="next-post">
+                    {{ page.next.title }} →
+                </a>
+                {% endif %}{% endraw %}
+            </div>
+        </div>
+    </footer>
+</article>

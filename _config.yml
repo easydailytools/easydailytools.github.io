@@ -1,0 +1,15 @@
+title: "Easy Daily Tools Blog"
+description: "Guides, tips, and calculators for daily life tools."
+baseurl: "" # 如果用 blog.easydailytools.com，就留空
+url: "https://easydailytools.github.io" # 改成你的域名
+theme: minima
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 多语言支持（手动文件夹）
+languages: ["en", "es", "pt"]
