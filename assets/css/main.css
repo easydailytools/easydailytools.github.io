@@ -710,22 +710,9 @@ a:hover {
         font-size: 1.3rem;
     }
     
-    /* Mobile List Optimizations */
-    .post-body ul li {
-        padding-left: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
+
     
-    .post-body ol li {
-        padding-left: 2.5rem;
-        margin-bottom: 0.75rem;
-    }
-    
-    .post-body ol li::before {
-        width: 1.75rem;
-        height: 1.75rem;
-        font-size: 0.8rem;
-    }
+
     
     /* Mobile Table Optimizations */
     .post-body table {
@@ -800,24 +787,7 @@ a:hover {
         font-size: 1rem;
     }
     
-    /* Small Screen List Optimizations */
-    .post-body ul li {
-        padding-left: 1.25rem;
-        margin-bottom: 0.5rem;
-        font-size: 0.95rem;
-    }
-    
-    .post-body ol li {
-        padding-left: 2.25rem;
-        margin-bottom: 0.75rem;
-        font-size: 0.95rem;
-    }
-    
-    .post-body ol li::before {
-        width: 1.5rem;
-        height: 1.5rem;
-        font-size: 0.75rem;
-    }
+
     
     /* Small Screen Table Optimizations */
     .post-body table {
@@ -1301,6 +1271,7 @@ a:hover {
 .post-body ul {
     padding-left: 0;
     margin: 1.5rem 0;
+    list-style: none;
 }
 
 .post-body ul li {
@@ -1308,6 +1279,7 @@ a:hover {
     padding-left: 2rem;
     margin-bottom: 0.75rem;
     color: #4a5568;
+    list-style: none;
 }
 
 .post-body ul li::before {
@@ -1324,6 +1296,7 @@ a:hover {
     counter-reset: item;
     padding-left: 0;
     margin: 1.5rem 0;
+    list-style: none;
 }
 
 .post-body ol li {
@@ -1332,6 +1305,7 @@ a:hover {
     padding-left: 3rem;
     margin-bottom: 1rem;
     color: #4a5568;
+    list-style: none;
 }
 
 .post-body ol li::before {
