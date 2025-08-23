@@ -40,16 +40,6 @@ layout: default
     <div class="post-content">
         <div class="container">
             <div class="content-wrapper">
-                <!-- Table of Contents -->
-                {% if page.toc != false %}
-                <div class="toc" id="tableOfContents">
-                    <h3>📚 Table of Contents</h3>
-                    <ul id="tocList">
-                        <!-- JavaScript will populate this -->
-                    </ul>
-                </div>
-                {% endif %}
-                
                 <!-- Main Content -->
                 <div class="post-body">
                     {{ content }}
@@ -117,79 +107,5 @@ window.addEventListener('scroll', () => {
     const docHeight = document.body.offsetHeight - window.innerHeight;
     const scrollPercent = (scrollTop / docHeight) * 100;
     document.getElementById('readingProgress').style.width = scrollPercent + '%';
-});
-
-// Table of Contents Generation
-document.addEventListener('DOMContentLoaded', function() {
-    const tocList = document.getElementById('tocList');
-    if (!tocList) return;
-    
-    const headings = document.querySelectorAll('.post-body h1, .post-body h2, .post-body h3');
-    const toc = [];
-    
-    headings.forEach((heading, index) => {
-        const id = `heading-${index}`;
-        heading.id = id;
-        
-        const level = parseInt(heading.tagName.charAt(1));
-        const text = heading.textContent;
-        
-        toc.push({
-            id: id,
-            text: text,
-            level: level
-        });
-    });
-    
-    toc.forEach(item => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = `#${item.id}`;
-        a.textContent = item.text;
-        a.style.paddingLeft = `${(item.level - 1) * 1.5}rem`;
-        
-        li.appendChild(a);
-        tocList.appendChild(li);
-    });
-    
-    // Smooth scrolling for TOC links
-    tocList.addEventListener('click', (e) => {
-        if (e.target.tagName === 'A') {
-            e.preventDefault();
-            const targetId = e.target.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
-    });
-});
-
-// Add intersection observer for headings
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '-20% 0px -35% 0px'
-};
-
-const headingObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Update active TOC item
-            const activeLink = document.querySelector('.toc a.active');
-            if (activeLink) activeLink.classList.remove('active');
-            
-            const tocLink = document.querySelector(`.toc a[href="#${entry.target.id}"]`);
-            if (tocLink) tocLink.classList.add('active');
-        }
-    });
-}, observerOptions);
-
-// Observe all headings
-document.querySelectorAll('.post-body h1, .post-body h2, .post-body h3').forEach(heading => {
-    headingObserver.observe(heading);
 });
 </script>
