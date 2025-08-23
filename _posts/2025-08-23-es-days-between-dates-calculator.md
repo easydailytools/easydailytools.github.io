@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nunca más te preguntes: calcula tus días entre fechas en segundos"
-date: 2025-08-21
+date: 2025-08-23
 categories: [productividad, fechas, herramientas]
 language: es
 keywords: [calculadora días entre fechas, contar días, fechas vacaciones, planificador fechas, herramientas]
