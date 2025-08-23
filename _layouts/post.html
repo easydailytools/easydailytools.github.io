@@ -13,26 +13,8 @@ layout: default
             <h1 class="post-title">{{ page.title }}</h1>
             <div class="post-meta">
                 <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">
-                    📅 {{ page.date | date: "%B %d, %Y" }}
+                    {{ page.date | date: "%B %d, %Y" }}
                 </time>
-                {% if page.author %}
-                <span class="post-author">👤 {{ page.author }}</span>
-                {% endif %}
-                {% if page.categories %}
-                <div class="post-categories">
-                    {% for category in page.categories %}
-                    <span class="category-tag">🏷️ {{ category }}</span>
-                    {% endfor %}
-                </div>
-                {% endif %}
-                {% if page.keywords %}
-                <div class="post-keywords">
-                    <span class="keywords-label">🔍 Keywords:</span>
-                    {% for keyword in page.keywords %}
-                    <span class="keyword-tag">{{ keyword }}</span>
-                    {% endfor %}
-                </div>
-                {% endif %}
             </div>
         </div>
     </header>
